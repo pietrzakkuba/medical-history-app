@@ -9,8 +9,8 @@
         <Label alignment="CENTER" contentDisplay="CENTER" layoutY="25.0" prefHeight="17.0" prefWidth="954.0" styleClass="main-label" text="Patients" />
         <TableView fx:id="mainTable" layoutX="22.0" layoutY="87.0" prefHeight="457.0" prefWidth="904.0">
             <columns>
-                <TableColumn fx:id="column_1" prefWidth="50.0" text="ID" />
-                <TableColumn fx:id="column_2" prefWidth="201.0" text="data" />
+                <TableColumn fx:id="id" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="column_2" prefWidth="201.0" text="Name" />
                 <TableColumn fx:id="column_3" prefWidth="90.0" text="data" />
                 <TableColumn fx:id="column_4" prefWidth="65.0" text="data" />
                 <TableColumn fx:id="column_5" prefWidth="157.0" text="data" />
@@ -32,7 +32,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button mnemonicParsing="false" onAction="#modify" prefHeight="28.0" prefWidth="128.0" text="Show Details" GridPane.columnIndex="0" />
+                <Button mnemonicParsing="false" onAction="#showDetails" prefHeight="28.0" prefWidth="128.0" text="Show Details" GridPane.columnIndex="0" />
                 <Button mnemonicParsing="false" onAction="#add" prefHeight="28.0" prefWidth="156.0" text="Add new Patient" GridPane.columnIndex="1" />
                 <Button mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="184.0" styleClass="exit-button" text="Delete Patient" GridPane.columnIndex="2" />
                 <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="159.0" prefWidth="301.0" text="Search Box:" GridPane.columnIndex="3">
